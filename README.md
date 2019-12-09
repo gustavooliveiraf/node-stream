@@ -1,8 +1,8 @@
 # eng-zap-challenge-javascript
 
 ## Como rodar localmente?
-Basta ter o node/npm instalado: primeiro roda o comando "npm install" e depois "npm start". Para facilitar, commitei o .env.  
-Mas, para faciliar os testes, rodei o projeto na aws (com docker) e criei um swagger, segue o link: http://ec2-52-70-222-152.compute-1.amazonaws.com/swagger  
+Basta ter o node/npm instalado: primeiro roda o comando "npm install" e depois "npm start". Para efeitos de teste, commitei o .env.  
+Mas, para faciliar, rodei o projeto na aws (com docker) e criei um swagger, segue o link: http://ec2-52-70-222-152.compute-1.amazonaws.com/swagger  
 Como só é para listar os portais, escolhi o verbo get para performar e a rota foi /list/{portalOrigin}. Para rodar basta escolher o parâmetro "portalOrigin" (que pode ser "zap" ou "viva-real") e clicar em "Execute". A interface do swagger é intuitiva.
 
 ## Como rodar os testes?
