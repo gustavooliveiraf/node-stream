@@ -1,7 +1,7 @@
 # eng-zap-challenge-javascript
 
 ## Como rodar localmente?
-Sem docker: basta ter o node/npm instalado: "npm install && npm start" (dependendo do SO pode ser preciso rodar com sudo).
+Sem docker: basta ter o node/npm instalado: "npm install && npm start" (dependendo do SO pode ser preciso rodar com sudo).  
 Com docker: docker build -t zap-challenge . && docker run -p 80:80 -d zap-challenge  
 Para efeitos de testes, commitei o .env.  
 
