@@ -3,6 +3,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node server.js",
+    "client": "node tcp/client.js",
+    "server": "node tcp/server.js",
     "dev": "nodemon server.js",
     "test": "jest --verbose",
     "test:coverage": "jest --coverage"
@@ -22,12 +24,12 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "jest": "^24.9.0",
-    "morgan": "^1.9.1",
     "nodemon": "^2.0.1",
     "supertest": "^4.0.2"
   },
   "dependencies": {
     "@hapi/joi": "^16.1.8",
+    "JSONStream": "^1.3.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "http-status-codes": "^1.4.0",

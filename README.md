@@ -1,14 +1,33 @@
 # eng-zap-challenge-javascript
 
+# Opção C: Fazer um processamento através de producer + consumer
+Para rodar o server (basta ter o node/npm instalado, dependendo do SO pode ser preciso rodar com sudo):  
+```bash
+npm run server
+```  
+Para rodar o client:  
+```bash
+npm run client
+```  
+Os arquivos criados vão para tcp/output  
+...  
+...  
+...  
+# Opção B: Fazer um processamento através de producer + consumer (backend)
 ## Como rodar localmente?
-Sem docker: basta ter o node/npm instalado: "npm install && npm start" (dependendo do SO pode ser preciso rodar com sudo).  
-Com docker: docker build -t zap-challenge . && docker run -p 80:80 -d zap-challenge  
+Sem docker (basta ter o node/npm instalado, dependendo do SO pode ser preciso rodar com sudo):  
+```bash
+npm install && npm start
+```   
+Com docker:  
+```bash
+docker build -t zap-challenge . && docker run -p 80:80 -d zap-challenge  
+```  
 Para efeitos de testes, commitei o .env.  
 
 Mas, visando faciliar a vida do avaliador, rodei o projeto no EC2 (com docker) e criei um swagger, segue o link:  
 http://ec2-52-70-222-152.compute-1.amazonaws.com/swagger  
-*Edit, depois de ouvir o Podcast do Hipster sobre Kubernetes, que um dos convidados era do Grupo Zap, me senti motivado a escalar o desafio. Daí, paralelizei o app usando o módulo nativo de cluster e orquestrei com Kubernetes.
-Segue link do endpoint do k8s:  
+*Depois de ouvir o Podcast do Hipster sobre Kubernetes, que um dos convidados era do Grupo Zap, me motivei a escalar o desafio. Daí, paralelizei o app usando o módulo nativo de cluster e orquestrei com Kubernetes. Segue link do endpoint do k8s:  
 http://ab364e0091b0c11ea83fe02464d82327-190797379.us-west-2.elb.amazonaws.com/swagger  
 Segue link da imagem, para mostrar que de fato o endpoint é do k8s: https://i.imgur.com/CwvohoF.png  
 
