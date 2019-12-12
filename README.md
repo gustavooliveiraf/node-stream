@@ -27,7 +27,7 @@ Para efeitos de testes, commitei o .env.
 
 Mas, visando faciliar a vida do avaliador, rodei o projeto no EC2 (com docker) e criei um swagger, segue o link:  
 http://ec2-52-70-222-152.compute-1.amazonaws.com/swagger  
-*Depois de ouvir o Podcast do Hipster sobre Kubernetes, que um dos convidados era do Grupo Zap, me motivei a escalar o desafio. Daí, paralelizei o app usando o módulo nativo de cluster e orquestrei com Kubernetes. Segue link do endpoint do k8s:  
+*Depois de ouvir o Podcast do Hipster sobre Kubernetes, que um dos convidados era do Grupo Zap, me motivei a escalar o desafio. Daí, paralelizei o app usando o módulo nativo de cluster e orquestrei com Kubernetes. Segue link do endpoint do k8s (*edit: derrubei o cluster, pois não é barato manter em pé. Quando for corrigir pode avisar por e-mail que subo de novo):  
 http://ab364e0091b0c11ea83fe02464d82327-190797379.us-west-2.elb.amazonaws.com/swagger  
 Segue link da imagem, para mostrar que de fato o endpoint é do k8s: https://i.imgur.com/CwvohoF.png  
 
