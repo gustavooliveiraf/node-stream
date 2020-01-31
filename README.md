@@ -1,6 +1,7 @@
-# eng-zap-challenge-javascript
+# Stream em node
 
-# Opção C: Fazer um processamento através de producer + consumer
+# Processamento producer + consumer - stream
+## Como rodar localmente?
 Para rodar o server (basta ter o node/npm instalado, dependendo do SO pode ser preciso rodar com sudo):  
 ```bash
 npm run server
@@ -13,7 +14,7 @@ Os arquivos criados vão para tcp/output
 ...  
 ...  
 ...  
-# Opção B: Fazer um processamento através de producer + consumer
+# Processamento producer + consumer - sem stream
 ## Como rodar localmente?
 Sem docker (basta ter o node/npm instalado, dependendo do SO pode ser preciso rodar com sudo):  
 ```bash
@@ -40,7 +41,7 @@ Para gerar o html com a cobertura: "npm run test:coverage"
 Os testes unitários e de integração ficaram com 100% de cobertura:  
 ![current coverage](https://i.ibb.co/dtctWRj/Screenshot-from-2019-12-09-03-40-58.png)
 
-## Como é o fluxo do projeto na Opção B?
+## Como é o fluxo do projeto sem stream?
 Para abstrair um banco de dados, foi criada uma interface onde a função dela é iterar sobre os registros e decidir se tal registro será selecionado ou não (de acordo com uma determinada regra de negócio, é o que um db faz no final das contas).  
 Com essa abordagem alguns ganhos foram naturais (aplicar a Opção B foi imediato, por exemplo), como legibilidade e a complexidade ficando em O(n). Se a regra de negócio ficasse 100% acoplada a interface, a complexidade real não ficaria em O(n) (apesar da complexidade amortizada ficar).  
 ![project flow](https://i.ibb.co/cQMCLvq/Screenshot-from-2019-12-09-03-28-13.png)
